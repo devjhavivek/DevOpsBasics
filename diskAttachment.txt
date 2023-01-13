@@ -1,0 +1,11 @@
+To attach external drive in linux
+
+sudo mkfs -t ext4 /dev/xvdg
+sudo mkfs -t xfs /dev/xvdg
+sudo mkdir /new_disk1
+sudo mount /dev/xvdh /snapshot_disk
+
+
+find disk record in /etc/mtab
+#/dev/xvdf /new_disk ext4 rw,relatime 0 0
+make entry in /etc/fstab
